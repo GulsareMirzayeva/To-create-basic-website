@@ -1,6 +1,5 @@
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-</style>*{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+    {box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -108,10 +107,27 @@ transition: 3s;
     border-radius: 15px;
     transition: 5s;
 }
+.buttons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffb3b3;
+    background: rgb(207,96,88);
+    border: solid 1px red;
+    cursor: pointer;
+    outline: none;
+    border-radius: 15px;
+    transition: 5s;
+}
 
 .buttons button:hover{
     background: #fff;
 }
-    
-    </div>
-</div>
+#btn {
+    width: 100px;
+}

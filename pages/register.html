@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title>
+        Register
+    </title>
+    <link rel="stylesheet" href="./register.css">
+
+</head>
+
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn">
+                    <button type="submit" class="toggle-btn" id="login">Log In</button>
+                    <button type="submit" class="toggle-btn" id="register"></button>Register</button>
+                </div>
+            </div>
+            <div class="social-icon">
+                <img src="./img/fb.png" alt="">
+                <img src="./img/gp.png" alt="">
+                <img src="./img/tw.png" alt="">
+            </div>
+
+            <div class="form">
+                <form id="Login" class="input-group">
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input type="text" class="input-field" placeholder="Enter Password" required>
+                    <div class="checkbox">
+                        <input type="checkbox" class="check-box">
+                        <p class="input-text">Remember Password</p>
+                    </div>
+                    <button type="submit" class="sumbit-btn">Log in</button>
+                </form>
+                <!-- <form id="Register" class="input-group">
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input type="email" class="input-field" placeholder="Email Id" required>
+                    <input type="text" class="input-field" placeholder="Enter Password" required>
+
+                    <div class="checkbox">
+                        <input type="checkbox" class="check-box">
+                        <p class="input-text">I agree to the terms & conditions</p>
+                    </div>
+
+                    <button type="submit" class="sumbit-btn">Register</button>
+                </form> -->
+            </div>
+
+        </div>
+    </div>
+
+
+
+</body>
+<script>
+    var login = document.getElementById('login');
+    var register = document.getElementById('register');
+    var x = document.getElementById("Login");
+    var y = document.getElementById("Register");
+    var z = document.getElementById("btn");
+
+    login.addEventListener("click", () => {
+        x.style.display = "block";
+            y.style.display = "none"
+    })
+
+    register.addEventListener("click", () => {
+        
+        if (x.style.display === "none") {
+            x.style.display = "none";
+        y.style.display = "block"
+        }
+
+        else {
+            y.style.display = "none";
+            
+        }
+       
+    })
+
+
+
+</script>
+
+</html>
